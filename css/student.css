@@ -1,0 +1,197 @@
+/* Student Module - Minimalist Style */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #fafafa;
+    min-height: 100vh;
+}
+
+/* Subjects Grid */
+.subjects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Subject Card */
+.subject-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: border-color 0.2s;
+}
+
+.subject-card:hover {
+    border-color: #000;
+}
+
+.subject-code {
+    display: inline-block;
+    background: #000;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.813rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.subject-card h3 {
+    color: #000;
+    margin-bottom: 0.75rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.subject-info {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 0.625rem;
+    line-height: 1.5;
+}
+
+.subject-info strong {
+    color: #000;
+}
+
+/* Prerequisites */
+.prerequisites {
+    background: #fef3c7;
+    border: 1px solid #fbbf24;
+    border-radius: 4px;
+    padding: 0.625rem;
+    margin: 0.75rem 0;
+    font-size: 0.813rem;
+}
+
+.prerequisites strong {
+    color: #92400e;
+}
+
+/* Enrolled Badge */
+.enrolled-badge {
+    display: inline-block;
+    background: #16a34a;
+    color: white;
+    padding: 0.625rem 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+/* Grade Badge */
+.grade-badge {
+    display: inline-block;
+    padding: 0.375rem 0.875rem;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.grade-badge.passed {
+    background: #f0fdf4;
+    color: #166534;
+}
+
+.grade-badge.pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.grade-badge.failed {
+    background: #fff5f5;
+    color: #991b1b;
+}
+
+/* Status Badge */
+.status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.813rem;
+    font-weight: 500;
+}
+
+.status-enrolled {
+    background: #f0f9ff;
+    color: #0369a1;
+}
+
+.status-completed {
+    background: #f0fdf4;
+    color: #166534;
+}
+
+.status-dropped {
+    background: #fff5f5;
+    color: #991b1b;
+}
+
+/* No Data Message */
+.no-data {
+    text-align: center;
+    padding: 3rem;
+    color: #666;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.no-data h3 {
+    color: #000;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.no-data p {
+    margin-bottom: 1rem;
+    font-size: 0.938rem;
+}
+
+/* Subject Details Card */
+.subject-details {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.subject-details h2 {
+    color: #000;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-label {
+    font-weight: 500;
+    color: #666;
+    font-size: 0.875rem;
+}
+
+.detail-value {
+    color: #000;
+    font-size: 0.875rem;
+}
+
+/* Enrollment Form */
+.enrollment-form {
+    margin-top: 1rem;
+}
+
+.enrollment-form form {
+    display: inline;
+}

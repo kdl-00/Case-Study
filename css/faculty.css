@@ -1,0 +1,219 @@
+/* Faculty Module - Minimalist Style */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #fafafa;
+    min-height: 100vh;
+}
+
+/* Subjects List */
+.subjects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.subject-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.subject-card:hover {
+    border-color: #000;
+}
+
+.subject-card.active {
+    border-color: #000;
+    border-width: 2px;
+}
+
+.subject-code {
+    display: inline-block;
+    background: #000;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.813rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.student-count {
+    display: inline-block;
+    background: #fafafa;
+    color: #666;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.813rem;
+    margin-left: 0.5rem;
+    border: 1px solid #e0e0e0;
+}
+
+.subject-card h3 {
+    color: #000;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Students Section */
+.students-section {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.students-section h2 {
+    color: #000;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* Students Grid */
+.students-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.student-card {
+    background: #fafafa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: start;
+    border: 1px solid #e0e0e0;
+}
+
+/* Student Images */
+.student-images {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #e0e0e0;
+}
+
+.signature-img {
+    width: 140px;
+    height: 50px;
+    object-fit: contain;
+    border: 1px solid #e0e0e0;
+    background: white;
+    padding: 0.25rem;
+    border-radius: 4px;
+}
+
+/* Student Info */
+.student-info {
+    flex: 1;
+}
+
+.student-info h3 {
+    color: #000;
+    margin-bottom: 0.75rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.info-item {
+    color: #666;
+    margin: 0.375rem 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.info-item strong {
+    color: #000;
+}
+
+/* Grade Badge */
+.grade-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.grade-badge.passed {
+    background: #f0fdf4;
+    color: #166534;
+}
+
+.grade-badge.pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.grade-badge.failed {
+    background: #fff5f5;
+    color: #991b1b;
+}
+
+/* No Data */
+.no-data {
+    text-align: center;
+    padding: 3rem;
+    color: #666;
+}
+
+/* Grade Form */
+.grade-form input[type="number"],
+.grade-form select,
+.grade-form textarea {
+    width: 100%;
+    padding: 0.625rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+.grade-form input[type="number"]:focus,
+.grade-form select:focus,
+.grade-form textarea:focus {
+    outline: none;
+    border-color: #000;
+}
+
+/* Class Statistics */
+.class-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 0.875rem;
+}
